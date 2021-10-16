@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#navbar {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 3.5rem;
+  padding: 5px 0 0 2.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+#navbar .logoBox {
+  width: 120px;
+  height: 60px;
+}
+
+.logoBox img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 2.5rem 0 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  width: 50rem;
+  max-width: 100%;
+  padding: 0 3.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+  margin: 2rem 0 2rem 0;
+  position: relative;
+  text-align: center;
+}
+
+.form-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 4px;
+}
+.form-header span {
+  background: #858688;
+  width: 100%;
+  height: 1.5px;
+  display: block;
+  border-radius: 15px;
+}
+
+.form .form-control {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+select {
+  width: 100%;
+  padding: 15px 0px;
+  padding-left: 6px;
+  outline: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+.form .form-control label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-control:last-child {
+  margin: 30px 0;
+}
+
+.form-control:last-child input {
+  background: #ed0303;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 12px;
+}
+
+.db-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 30px;
+  position: relative;
+}
+
+.sidebar {
+  background: #fff;
+  margin-right: 2rem;
+  width: 17rem;
+  padding-left: 20px;
+  padding-top: 40px;
+  border-radius: 2px;
+}
+
+.sidebar li {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+  /* font-weight: 600; */
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #5d5d5e;
+}
+
+.main-content {
+  background: #fff;
+  flex: 1;
+  padding: 30px 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.main-content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border-radius: ;
+}
+
+.main-content .contents {
+  width: 100%;
+  font-size: 1.7rem;
+  overflow-x: auto;
+}
+
+.contents table {
+  width: 100% !important;
+  border-collapse: collapse;
+}
+
+.contents thead {
+  background: #d1d5db5f;
+}
+
+thead tr,
+tbody tr {
+  width: 100%;
+}
+
+tbody tr:nth-child(even) {
+  background: #ccc;
+}
+tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+thead th,
+tbody td {
+  padding: 1.2rem;
+}
+
+td a.edit-btn {
+  background: rgb(89, 89, 182);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+td a.delete-btn {
+  background: #ed0303;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
